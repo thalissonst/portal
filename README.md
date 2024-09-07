@@ -28,17 +28,7 @@ Certifique-se de ter os seguintes pré-requisitos instalados em sua máquina:
    ```bash
    composer install
 
-4. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/thalissonst/portal.git
-
-5. **Navegue até o diretório da api:**
-
-   ```bash
-   cd api
-
-6. **Configure o banco de dados:**
+4. **Configure o banco de dados:**
 
    ```bash
     DB_CONNECTION=mysql
@@ -48,30 +38,24 @@ Certifique-se de ter os seguintes pré-requisitos instalados em sua máquina:
     DB_USERNAME=root
     DB_PASSWORD=
 
-7. **Navegue até o diretório da api:**
-
-   ```bash
-   cd api
-
-8. **Execute as migrações:**
-
-   ```bash
-   php artisan migrate
-   
-8. **Execute as migrações:**
+5. **Execute as migrações:**
 
    ```bash
    php artisan migrate
 
-9. **Para iniciar o servidor de desenvolvimento Laravel, use o comando:**
+6. **Para iniciar o servidor de desenvolvimento Laravel, use o comando:**
 
    ```bash
    php artisan serve
 
-10. **Vá para o diretório do frontend e instale as dependências. Depois compile os arquivos:**
+7. **Vá para o diretório do frontend e instale as dependências:**
 
    ```bash
    npm install
+
+8. **Compile os arquivos:**
+
+   ```bash
    npm run dev
 
 
