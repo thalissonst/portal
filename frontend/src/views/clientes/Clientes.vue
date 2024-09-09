@@ -75,6 +75,7 @@ const saveCustomer = () => {
                 } else { 
                     toast.add({ severity: 'error', summary: 'Erro!', detail: response.error, life: 5000 }) 
                 } 
+                tableData();
             });
         } 
         else 
@@ -85,13 +86,13 @@ const saveCustomer = () => {
                 } else { 
                     toast.add({ severity: 'error', summary: 'Erro!', detail: response.error, life: 5000 }) 
                 } 
+                tableData();
             });
             
         }
 
         customerDialog.value = false;
         customer.value = {};
-        tableData();
     }
 };
 
