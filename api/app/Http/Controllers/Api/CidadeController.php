@@ -34,7 +34,7 @@ class CidadeController extends Controller
     {
         try {
             //Faz a validação dos campos
-            $request->validate(['nome' => 'required|string|max:255', 'estado_id' => 'required|string|max:10']);
+            $request->validate(['nome' => 'required|string|max:255', 'estado_id' => 'required|max:10']);
 
             //Realiza o cadastro do usuário
             $response = Cidade::create([
