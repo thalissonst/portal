@@ -14,7 +14,9 @@ const model = ref([
     {
         label: 'Configurações',
         items: [
-            { label: 'Usuarios', icon: 'pi pi-fw pi-users', to: '/usuarios' }
+            { label: 'Usuarios', icon: 'pi pi-fw pi-users', to: '/usuarios' },
+            { label: 'Estados', icon: 'pi pi-fw pi-map', to: '/configuracoes/estados' },
+            { label: 'Cidades', icon: 'pi pi-fw pi-map-marker', to: '/configuracoes/cidades' }
         ]
     },
 ]);
