@@ -24,6 +24,16 @@ const router = createRouter({
                     component: () => import('@/views/configuracoes/Usuarios.vue')
                 },
                 {
+                    path: 'configuracoes/estados',
+                    name: 'estados',
+                    component: () => import('@/views/configuracoes/Estados.vue')
+                },
+                {
+                    path: 'configuracoes/cidades',
+                    name: 'cidades',
+                    component: () => import('@/views/configuracoes/Cidades.vue')
+                },
+                {
                     path: '/perfil',
                     name: 'perfil',
                     component: () => import('@/views/Perfil.vue')
