@@ -46,7 +46,7 @@ class ClienteController extends Controller
             ]);
 
             // Cria uma instância de Carbon com a data de nascimento
-            $dateBirth = Carbon::parse($request->nascimento);
+            $dateBirth = Carbon::parse($request->cliente_nascimento);
             
             //Realiza o cadastro do usuário
             $response = Cliente::create([
