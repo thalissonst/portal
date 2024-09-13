@@ -182,7 +182,7 @@ const hideDialog = () => {
                     <Column header="Foto" headerStyle="min-width:10rem;">
                         <template #body="slotProps">
                             <span class="p-column-title">Foto</span>
-                            <!-- <img :src="'/demo/images/product/' + slotProps.data.cliente_foto" :alt="slotProps.data.cliente_foto" class="shadow-2" width="100" /> -->
+                            <!-- <img :src="'customer.png' :alt="slotProps.data.cliente_foto" class="shadow-2" width="100" /> -->
                         </template>
                     </Column>
                     <Column field="cpf" header="C.P.F" :sortable="true" headerStyle="min-width:10rem;">
@@ -230,7 +230,6 @@ const hideDialog = () => {
                 </DataTable>
 
                 <Dialog v-model:visible="customerDialog" :style="{ width: '450px' }" header="Cliente" :modal="true" class="p-fluid">
-                    <img :src="'/demo/images/product/' + customer.cliente_image" :alt="customer.cliente_image" v-if="customer.cliente_image" width="150" class="mt-0 mx-auto mb-5 block shadow-2" />
                     <div class="field">
                         <label for="nome">Nome *</label>
                         <InputText id="nome" v-model.trim="customer.cliente_nome" required="true" autofocus :invalid="submitted && !customer.cliente_nome" />
